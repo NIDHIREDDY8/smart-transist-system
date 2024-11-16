@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Novotel Hyderabad</title> 
+    <style>
+       /* Global styles */
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background-image: url('https://ihpl.b-cdn.net/pictures/hotel/hotelgalleryn/trident-hotel-hyderabad-59047.jpg'); /* Replace with actual image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+        }
+
+        header h1 {
+            position: relative;
+            font-size: 3rem;
+            margin: 0;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        .hotel-details {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hotel-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .hotel-section h2 {
+            font-size: 2rem;
+            color: #004d80;
+            border-bottom: 2px solid #004d80;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            padding: 5px 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #004d80;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        ul li::before {
+            content: '✔';
+            color: #004d80;
+            margin-right: 10px;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .hotel-details {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hotel-details {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .hotel-section h2 {
+                font-size: 1.5rem;
+            }
+        }/* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background-image: url('https://ihpl.b-cdn.net/pictures/hotel/hotelgalleryn/trident-hotel-hyderabad-59047.jpg'); /* Replace with actual image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+        }
+
+        header h1 {
+            position: relative;
+            font-size: 3rem;
+            margin: 0;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        .hotel-details {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hotel-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .hotel-section h2 {
+            font-size: 2rem;
+            color: #004d80;
+            border-bottom: 2px solid #004d80;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            padding: 5px 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #004d80;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        ul li::before {
+            content: '✔';
+            color: #004d80;
+            margin-right: 10px;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .hotel-details {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hotel-details {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .hotel-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="background-image: url('https://ihpl.b-cdn.net/pictures/hotel/hotelgalleryn/trident-hotel-hyderabad-59047.jpg');">
+        <h1>The Novotel Hyderabad</h1>
+    </header>
+    <div class="hotel-details">
+        <div class="hotel-section">
+            <h2>Available Rooms</h2>
+            <ul>
+                <li>Deluxe Room - $300/night</li>
+                <li>Club Suite - $500/night</li>
+                <li>Presidential Suite - $1000/night</li>
+            </ul>
+        </div>
+        <div class="hotel-section">
+            <h2>Nearby Attractions</h2>
+            <ul>
+                <li>Central Park</li>
+                <li>Ritz Shopping Center</li>
+                <li>Historic Theater District</li>
+            </ul>
+        </div>
+        <div class="hotel-section">
+            <h2>Food and Dining</h2>
+            <p>Enjoy fine dining with exclusive international cuisines and signature cocktails.</p>
+        </div>
+        <div class="hotel-section">
+            <h2>Amenities</h2>
+            <ul>
+                <li>Luxury Spa</li>
+                <li>24-Hour Room Service</li>
+                <li>Fitness Center</li>
+                <li>Complimentary Wi-Fi</li>
+            </ul>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <a href="hotel.html" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>

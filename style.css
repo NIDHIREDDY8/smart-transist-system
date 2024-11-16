@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #333;
+}
+
+.city-list {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+
+
+.city-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.city-btn:hover {
+    background-color: #2980b9;
+}
+
+.hotel-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.hotel-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hotel-card {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-card img {
+    width: 100%;
+    height: auto;
+}
+
+.hotel-card h3 {
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+    color: #333;
+}
+
+.hotel-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.hotel-section {
+    margin-bottom: 20px;
+}
+
+.hotel-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.hotel-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.hotel-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main header */
+h1{
+    margin-top: 50px;
+}
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Page container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Image styling */
+.image-gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Info section */
+.info {
+    width: 100%;
+    background: #f4f4f4;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    color: #444;
+}
+
+.info h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Room and Attractions Lists */
+.room-list,
+.attractions {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.room-list li,
+.attractions li {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.room-list li strong {
+    color: #333;
+}
+
+.attractions li:last-child,
+.room-list li:last-child {
+    border-bottom: none;
+}
+
+/* Link back */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+    background-color: #eee;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.back-link:hover {
+    background-color: #ddd;
+}
+
+.back-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #004d80;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}

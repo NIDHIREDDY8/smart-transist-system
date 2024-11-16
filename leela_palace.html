@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Leela Palace</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background-image: url('https://www.luxurymywedding.com/img/hotel/18_96415.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        header h1 {
+            position: relative;
+            font-size: 3rem;
+            margin: 0;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #004d80;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #003b63;
+        }
+
+        .hotel-details {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hotel-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .hotel-section h2 {
+            font-size: 2rem;
+            color: #004d80;
+            border-bottom: 2px solid #004d80;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            padding: 5px 0;
+        }
+
+        ul li::before {
+            content: '✔';
+            color: #004d80;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hotel-details {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Leela Palace</h1>
+    </header>
+
+    <!-- Back Button -->
+    <div style="text-align: center;">
+        <a href="hotel.html" class="back-button">Back to Home</a>
+    </div>
+
+    <div class="hotel-details">
+        <div class="hotel-section">
+            <h2>Available Rooms</h2>
+            <ul>
+                <li>Royal Room - $250/night</li>
+                <li>Maharaja Suite - $600/night</li>
+            </ul>
+        </div>
+        <div class="hotel-section">
+            <h2>Nearby Attractions</h2>
+            <ul>
+                <li>Humayun's Tomb</li>
+                <li>Qutub Minar</li>
+                <li>India Gate</li>
+            </ul>
+        </div>
+        <div class="hotel-section">
+            <h2>Food and Dining</h2>
+            <p>Enjoy fine dining with Indian, Italian, and French delicacies.</p>
+        </div>
+        <div class="hotel-section">
+            <h2>Amenities</h2>
+            <ul>
+                <li>Infinity Pool</li>
+                <li>Spa</li>
+                <li>Yoga Classes</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

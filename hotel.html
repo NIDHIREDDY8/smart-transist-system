@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Availability</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 3;
+        }
+        .navbar a {
+            color: white;
+            padding: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="hotel.html">Hotel Information</a>
+            <a href="train.php">Train Information</a>
+            <a href="cab.php">Cab</a>
+            <a href="delaysf.php">Delays</a>
+        </div>
+    <h1>Hotel Availability by City</h1>  
+    <div class="city-list">
+        <button class="city-btn" onclick="showHotels('Mumbai')">Mumbai</button>
+        <button class="city-btn" onclick="showHotels('Delhi')">Delhi</button>
+        <button class="city-btn" onclick="showHotels('Bangalore')">Bangalore</button>
+        <button class="city-btn" onclick="showHotels('Hyderabad')">Hyderabad</button>
+        <button class="city-btn" onclick="showHotels('Ahmedabad')">Ahmedabad</button>
+        <button class="city-btn" onclick="showHotels('Chennai')">Chennai</button>
+        <button class="city-btn" onclick="showHotels('Kolkata')">Kolkata</button>
+        <button class="city-btn" onclick="showHotels('Surat')">Surat</button>
+        <button class="city-btn" onclick="showHotels('Pune')">Pune</button>
+        <button class="city-btn" onclick="showHotels('Jaipur')">Jaipur</button>
+        <button class="city-btn" onclick="showHotels('Lucknow')">Lucknow</button>
+        <button class="city-btn" onclick="showHotels('Kanpur')">Kanpur</button>
+        <button class="city-btn" onclick="showHotels('Nagpur')">Nagpur</button>
+        <button class="city-btn" onclick="showHotels('Indore')">Indore</button>
+        <button class="city-btn" onclick="showHotels('Thane')">Thane</button>
+        <button class="city-btn" onclick="showHotels('Bhopal')">Bhopal</button>
+        <button class="city-btn" onclick="showHotels('Visakhapatnam')">Visakhapatnam</button>
+        <button class="city-btn" onclick="showHotels('Pimpri-Chinchwad')">Pimpri-Chinchwad</button>
+        <button class="city-btn" onclick="showHotels('Patna')">Patna</button>
+        <button class="city-btn" onclick="showHotels('Vadodara')">Vadodara</button>
+        <button class="city-btn" onclick="showHotels('Ghaziabad')">Ghaziabad</button>
+        <button class="city-btn" onclick="showHotels('Ludhiana')">Ludhiana</button>
+        <button class="city-btn" onclick="showHotels('Agra')">Agra</button>
+        <button class="city-btn" onclick="showHotels('Nashik')">Nashik</button>
+        <button class="city-btn" onclick="showHotels('Faridabad')">Faridabad</button>
+        <button class="city-btn" onclick="showHotels('Meerut')">Meerut</button>
+    </div>
+    </div>
+    <div id="hotel-info" class="hotel-info">
+        <h2>Hotels in <span id="selected-city">Selected City</span></h2>
+        <div id="hotel-list" class="hotel-list">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Availability</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Select a City to View Hotels</h1>
+<div class="city-buttons">  
+</div>
+<h2 id="selected-city"></h2>
+<div id="hotel-list"></div>
+<script src="script.js"></script>
+</body>
+<footer>
+    <pre style="font-size: 20px; text-align: center; background-color: #f4f4f9; padding: 10px; margin: 0;">
+Team members:
+23MIS0154
+23MIS0139
+23MIS0109
+23MIS0208
+    </pre>
+</footer>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Journey Planner / Transit Map</title>
+    <style>
+        
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://wallpaperbat.com/img/476794-taj-mahal-wallpaper-hd.jpg'); /* Placeholder for background image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+
+        /* Overlay for darker background effect */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+
+        /* Container styling */
+        .container {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            text-align: center;
+            margin-top: 120px;
+        }
+
+        /* Navigation bar styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 3;
+        }
+
+        /* Navigation links styling */
+        .navbar a {
+            color: white;
+            padding: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ddd;
+        }
+
+        /* Title styling */
+        h1 {
+            font-size: 2.5em;
+            margin: 80px 0 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow effect to title */
+        }
+
+        /* Breadcrumb-like text styling */
+        .breadcrumb {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        /* Search form styling */
+        .search-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow effect to the form */
+        }
+
+        /* Input fields styling */
+        .search-form input[type="text"] {
+            padding: 10px;
+            font-size: 1.1em;
+            border: 1px solid #ccc;
+            margin-right: 5px;
+            border-radius: 5px;
+            width: 45%;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-form input[type="text"]:focus {
+            border-color: #444; /* Change border color on focus */
+        }
+
+        /* Search button styling */
+        .search-form button {
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border: none;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Button hover effect */
+        .search-form button:hover {
+            background-color: #333;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('#routeForm').on('submit', function(e){
+              e.preventDefault();
+              let start = $('#start').val();
+              let end = $('#end').val();
+              $.ajax({
+                  url: 'getRoute.php',
+                  type: 'POST',
+                  data: { start: start, end: end },
+                  success: function(response){
+                      $('#result').html(response);
+                  }
+              });
+          });
+      });
+    </script>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="navbar">
+        <a href="C:\Users\laksh\Downloads\newfolder\htdocs\harika\lakshaya\hotel.html">Hotel Information</a>
+        <a href="#flight-info">Flight Information</a>
+        <a href="#app">App</a>
+        <a href="#english">English</a>
+    </div>
+
+    <div class="container">
+        <h1>India Journey Planner / Transit Map</h1>
+        <p class="breadcrumb">NAVITIME Transit / India Journey Planner / Transit Map</p>
+
+        <!-- Search Form -->
+        <form id="routeForm" class="search-form">
+            <input type="text" id="start" name="start" placeholder="Departure" required>
+            <input type="text" id="end" name="end" placeholder="Arrival" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Display Results -->
+        <div id="result"></div>
+    </div>
+</body>
+</html>
